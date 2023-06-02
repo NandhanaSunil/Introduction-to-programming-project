@@ -22,7 +22,7 @@
   <li> Object Detection: Utilizes OpenCV's object detection capabilities to identify objects in an image.</li>
   <li> Rectangle Approximation: Approximates the object boundaries to rectangles for easier measurement, considering imperfect geometric shapes.</li>
   <li> Aruco Marker: Uses Aruco markers to establish a reference for size conversion, ensuring accurate measurements.</li>
-  <li>↔ Pixel-to-Centimeter Conversion: Calculates the pixel-to-centimeter ratio using the Aruco marker, enabling conversion of object measurements from pixels to centimeters.</li>
+  <li> Pixel-to-Centimeter Conversion: Calculates the pixel-to-centimeter ratio using the Aruco marker, enabling conversion of object measurements from pixels to centimeters.</li>
 </ul>
 
 <p>OpenCV is a powerful open-source computer vision library that provides a wide range of tools for image processing, object detection, and geometric transformations. By leveraging OpenCV's functionalities, this project enables accurate and efficient object measurement.</p>
@@ -32,7 +32,7 @@
 <p>To install and set up the project, follow these steps:</p>
 
 <ol>
-  <li> Clone the repository: <code>git clone https://github.com/your-username/object-measurement.git</code></li>
+  <li> Clone the repository: <code>git clone https://github.com/NandhanaSunil/Introduction-to-programming-project.git</li>
   <li> Navigate to the project directory: <code>cd object-measurement</code></li>
   <li> Install the required dependencies: <code>pip install -r requirements.txt</code></li>
   <li> Run the project: <code>python object_measurement.py</code></li>
