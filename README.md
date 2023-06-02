@@ -82,9 +82,9 @@
 <p>The following contributors have made significant contributions to this project:</p>
 
 <ul>
-  <li>👤 John Doe (@johndoe)</li>
-  <li>👤 Jane Smith (@janesmith)</li>
-  <li>👤 Alex Johnson (@alexjohnson)</li>
+  <li>👤 Sangam (@s-angam)</li>
+  <li>👤 Nandhana Sunil (@NandhanaSunil)</li>
+  <li>👤 Rhoda Grace (@)</li>
 </ul>
 
 <h2>📄 License</h2>
