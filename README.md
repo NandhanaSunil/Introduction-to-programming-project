@@ -1,4 +1,4 @@
-<h1>Measuring the Side of an Object using OpenCV 📏</h1>
+<h1>MeasureCraft 📏</h1>
 
 <h2>Table of Contents</h2>
 
