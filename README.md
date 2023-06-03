@@ -14,8 +14,6 @@
 
 <h2>📃 Project Description</h2>
 
-<p>The "Measuring the Side of an Object using OpenCV" project aims to provide a solution for measuring the side of an object using the OpenCV library. This project utilizes computer vision techniques to detect objects in an image, calculate their dimensions, and convert the measurements from pixels to centimeters.</p>
-
 <p>The project offers the following features:</p>
 
 <ul>
