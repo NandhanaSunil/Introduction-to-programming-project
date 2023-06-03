@@ -71,6 +71,73 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow",
                                              "Browse for Pictures"))
         self.label_2.setText(_translate("MainWindow", "MeasureCraft"))
+    def livecapture(self):
+        # To detect the aruco marker
+        para = aruco.DetectorParameters()
+        dict_aruco = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
+        # Starting the Video Capture
+        cap = cv2.VideoCapture(0)
+        # Setting the resolution of the frame
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+        
+        while True:
+            # For continuos measurement
+            _, img = cap.read()
+
+            corner, _, _ = cv2.aruco.detectMarkers(img, dict_aruco,
+                                                   parameters=para)
+            if corner:
+
+                # If Aruco Marker is present
+                intcorners = np.int0(corner)
+                # To Draw boundary lines around the aruco marker
+                cv2.polylines(img, intcorners, True, (0, 255, 0), 5)
+
+                # Finding the perimeter of the aruco marker
+                arucoperimeter = cv2.arcLength(corner[0], True)
+                # Uncomment the line below to see the perimeter of the marker
+                # print(arucoperimeter)
+
+                # Converting Pixels to cm
+                scalecmpix = arucoperimeter / 20
+                # Uncomment the line below to see the ratio
+                # print(scalecmpix)
+                
+                contour = detector.detect_objects(img)
+                for points in contour:
+                    # To make the boundary as a rectangle
+                    (x, y), (w, h), angle = cv2.minAreaRect(points)
+
+                    # Coverting everything to cm
+                    w /= scalecmpix
+                    h /= scalecmpix
+                    
+                    # To display the Height and the Width of the Object Detected
+                    cv2.putText(img, f"Width:{round(w,1)}", (int(x-70),
+                                                             int(y-30)),
+                                cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
+                    cv2.putText(img, f"Height:{round(h,1)}", (int(x-70),
+                                                              int(y+50)),
+                                cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
+                    # To mark the Object's Center
+                    cv2.circle(img, (int(x), int(y)), 5, (0, 0, 255), -1)
+                    box = cv2.boxPoints(cv2.minAreaRect(points))
+                    box = np.int0(box)
+                    cv2.polylines(img, [box], True, (0, 255, 255), 2)
+                    
+
+            # to disply the frame on the screen
+            cv2.imshow("image", img)
+            k = cv2.waitKey(1)
+            # To stop the Capturing
+            if k == 27:
+                break
+                
+        # To close the Window
+        cap.release()
+        cv2.destroyAllWindows()
+    
     
         
     
