@@ -16,4 +16,12 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Mistral")
         font.setPointSize(14)
+        self.pushButton.setFont(font)
+        self.pushButton.setAutoFillBackground(False)
+        self.pushButton.setStyleSheet("background-color: #e5e5e5")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.clicked.connect(self.browse)
+        self.pushButton_2.setGeometry(QtCore.QRect(190, 120, 161, 61))
+        
         
