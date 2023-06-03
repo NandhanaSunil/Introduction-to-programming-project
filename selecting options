@@ -13,4 +13,7 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.clicked.connect(self.livecapture)
         self.pushButton.setGeometry(QtCore.QRect(410, 120, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Mistral")
+        font.setPointSize(14)
         
