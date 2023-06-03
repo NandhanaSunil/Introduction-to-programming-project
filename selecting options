@@ -27,5 +27,10 @@ class Ui_MainWindow(object):
         font.setFamily("Mistral")
         font.setPointSize(12)
         font.setItalic(False)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("background-color: #e5e5e5\n")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(240, 30, 291, 51))
         
         
