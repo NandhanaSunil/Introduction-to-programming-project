@@ -23,7 +23,7 @@
   <li> Pixel-to-Centimeter Conversion: Calculates the pixel-to-centimeter ratio using the Aruco marker, enabling conversion of object measurements from pixels to centimeters.</li>
 </ul>
 
-<p>OpenCV is a powerful open-source computer vision library that provides a wide range of tools for image processing, object detection, and geometric transformations. By leveraging OpenCV's functionalities, this project enables accurate and efficient object measurement.</p>
+
 
 <h2>💻 Installation</h2>
 
