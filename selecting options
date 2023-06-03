@@ -1,0 +1,16 @@
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(0, 0, 801, 601))
+        self.label.setAutoFillBackground(False)
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("photo-1617118602031-1edde7582212.jpg"))
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.clicked.connect(self.livecapture)
+        self.pushButton.setGeometry(QtCore.QRect(410, 120, 161, 61))
+        
