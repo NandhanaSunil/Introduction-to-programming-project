@@ -62,7 +62,6 @@
 <ul>
   <li> Enhancing object detection accuracy by incorporating deep learning-based models.</li>
   <li> Introducing additional measurement metrics such as volume and area.</li>
-  <li> Building a user-friendly interface for easy input and output.</li>
 </ul>
 
 <h2>⚠️ Limitations</h2>
