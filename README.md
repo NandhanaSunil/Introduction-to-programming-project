@@ -84,7 +84,7 @@
 <ul>
   <li>👤 Sangam (@s-angam)</li>
   <li>👤 Nandhana Sunil (@NandhanaSunil)</li>
-  <li>👤 Rhoda Grace (@)</li>
+  <li>👤 Rhoda Grace (@RhodaGrace)</li>
 </ul>
 
 <h2>📄 License</h2>
