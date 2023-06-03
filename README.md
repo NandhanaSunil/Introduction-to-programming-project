@@ -13,7 +13,7 @@
 </ul>
 
 <h2>📃 Project Description</h2>
-
+<p>The "Measure Craft" project aims to provide a solution for measuring the height and width of an object using the OpenCV library. This project utilizes computer vision techniques to detect objects in an image, calculate their dimensions, and convert the measurements from pixels to centimeters.</p>
 <p>The project offers the following features:</p>
 
 <ul>
@@ -25,18 +25,18 @@
 
 
 
-<h2>💻 Installation</h2>
+<h2>💻 Requirements</h2>
 
-<p>To install and set up the project, follow these steps:</p>
-
+<p>To run and set up the project easily, import these libraries:</p>
+<h3> Modules: </h3>
 <ol>
-  <li> Clone the repository: <code>git clone https://github.com/NandhanaSunil/Introduction-to-programming-project.git</li>
-  <li> Navigate to the project directory: <code>cd object-measurement</code></li>
-  <li> Install the required dependencies: <code>pip install -r requirements.txt</code></li>
-  <li> Run the project: <code>python object_measurement.py</code></li>
+  <li> PYQT5</li>
+  <li> OPEN-CV</li>
+  <li> HOMOBGDTECTOR</li>
+  <li> PYQT5-TOOLS</li>
 </ol>
 
-<p>Make sure you have Python and pip installed on your system before proceeding with the installation.</p>
+<p>Make sure you have Python and pip installed on your system before proceeding with the requirements.</p>
 
 <h2>📋 Usage</h2>
 
