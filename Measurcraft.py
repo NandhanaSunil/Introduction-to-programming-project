@@ -73,7 +73,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "MeasureCraft"))
     
     def browse(self):
-        # Open a file dialog to select image file
+        # Open a file dialog to select an image file
         self.fl = QFileDialog.getOpenFileName(filter='Image (*.*)')[0]
         if self.fl:
 
