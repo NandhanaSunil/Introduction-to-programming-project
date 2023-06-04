@@ -81,7 +81,7 @@ class Ui_MainWindow(object):
             para = aruco.DetectorParameters()
             dict_aruco = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
 
-            # Read the selected image
+            # Read selected image
             img = cv2.imread(self.fl)
 
             # Detect the Aruco markers in the image
