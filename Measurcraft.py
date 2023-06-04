@@ -71,6 +71,89 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow",
                                              "Browse for Pictures"))
         self.label_2.setText(_translate("MainWindow", "MeasureCraft"))
+    
+    def browse(self):
+        # Open a file dialog to select an image file
+        self.fl = QFileDialog.getOpenFileName(filter='Image (*.*)')[0]
+        if self.fl:
+
+            # load Aruco detector
+            para = aruco.DetectorParameters()
+            dict_aruco = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
+
+            # Read the selected image
+            img = cv2.imread(self.fl)
+
+            # Detect the Aruco markers in the image
+            corner, _, _ = cv2.aruco.detectMarkers(img, dict_aruco,
+                                                   parameters=para)
+
+            if corner:
+                # Draw the detected Aruco marker perimeter on the image
+                intcorners = np.int0(corner)
+                cv2.polylines(img, intcorners, True, (0, 255, 0), 5)
+
+                # Calculate the perimeter of the Aruco marker
+                arucoperimeter = cv2.arcLength(corner[0], True)
+
+
+                # Converting Pixels to cm
+                if arucoperimeter:
+                    scalecmpix = arucoperimeter / 20
+
+                contour = detector.detect_objects(img)
+                for points in contour:
+                    # Calculate the minimum area rectangle enclosing each object 
+                    (x, y), (w, h), angle = cv2.minAreaRect(points)
+
+                    # Coverting everything(object dimensions) to cm
+                    if scalecmpix:
+                        w /= scalecmpix
+                        h /= scalecmpix
+
+                    #Display the object dimensions on the image
+                    cv2.putText(img, f"Width:{round(w,1)}cm", (int(x-70),
+                                                               int(y-30)),
+                                cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
+                    cv2.putText(img, f"Height:{round(h,1)}cm", (int(x-70),
+                                                                int(y+50)),
+                                cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
+                    
+                    # Mark the centre of the object with a circle
+                    cv2.circle(img, (int(x), int(y)), 5, (0, 0, 255), -1)
+
+                    # Draw the minimum area rectangle around the object
+                    box = cv2.boxPoints(cv2.minAreaRect(points))
+                    box = np.int0(box)
+                    cv2.polylines(img, [box], True, (0, 255, 255), 2)
+                    print(box)
+            else:
+                contour = detector.detect_objects(img)
+                for points in contour:
+
+                    # Calculate the minimum area rectangle enclosing each object
+                    (x, y), (w, h), angle = cv2.minAreaRect(points)
+
+                    # Display the object dimensions in pixels on the image
+                    cv2.putText(img, f"Width:{round(w,1)}pix", (int(x-70),
+                                                                int(y-30)),
+                                cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
+                    cv2.putText(img, f"Height:{round(h,1)}pix", (int(x-70),
+                                                                 int(y+50)),
+                                cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
+
+                    # Mark the centre of the object with a circle 
+                    cv2.circle(img, (int(x), int(y)), 5, (0, 0, 255), -1)
+
+                    # Draw the minimun area rectangle around the object
+                    box = cv2.boxPoints(cv2.minAreaRect(points))
+                    box = np.int0(box)
+                    cv2.polylines(img, [box], True, (0, 255, 255), 2)
+                    print(box)
+
+                    # Display the annotated image
+            cv2.imshow("image", img)
+            cv2.waitKey(0)
     def livecapture(self):
         # To detect the aruco marker
         para = aruco.DetectorParameters()
