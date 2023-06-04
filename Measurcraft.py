@@ -77,7 +77,7 @@ class Ui_MainWindow(object):
         self.fl = QFileDialog.getOpenFileName(filter='Image (*.*)')[0]
         if self.fl:
 
-            # load Aruco detecto
+            # load Aruco detector
             para = aruco.DetectorParameters()
             dict_aruco = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
 
