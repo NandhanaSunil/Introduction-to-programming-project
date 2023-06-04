@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtGui, QtWidget
+from PyQt5 import QtCore, QtGui, QtWidgets
 import cv2
 import cv2.aruco as aruco
 import numpy as np
