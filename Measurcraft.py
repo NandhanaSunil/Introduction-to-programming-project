@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QFileDialog
 from detect import HomoBgDtector
 
 
-detector = HomoBgDtector()
+detector = HomoBgDtector(
 
 
 class Ui_MainWindow(object):
