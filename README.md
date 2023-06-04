@@ -4,7 +4,7 @@
 
 <ul>
   <li><a href="#project-description">Project Description</a></li>
-  <li><a href="#installation">Installation</a></li>
+  <li><a href="#requirements">Requirements</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#future-goals">Future Goals</a></li>
   <li><a href="#limitations">Limitations</a></li>
