@@ -44,13 +44,8 @@
 
 <ol>
   <li> Import the necessary modules and functions from the project.</li>
-  <li> Load the image in which you want to measure the object's side.</li>
-  <li> Detect the objects in the image using the object detection function.</li>
-  <li> Approximate the object boundaries to rectangles for easier measurement.</li>
-  <li> Utilize an Aruco marker as a size reference for pixel-to-centimeter conversion.</li>
-  <li> Calculate the pixel-to-centimeter ratio using the known size of the Aruco marker.</li>
-  <li> Iterate over the detected objects and measure their sides using the pixel-to-centimeter ratio.</li>
-  <li> Display the image with the measured objects and their dimensions.</li>
+  <li> Load the image in which you want to measure the object's side by browsing files or live capturing.</li>
+  <li> In the live-capturing mode press 'esc' key when you want to close the program.</li>
 </ol>
 
 <p>By following these steps, you can measure the side of an object in an image using OpenCV.</p>
