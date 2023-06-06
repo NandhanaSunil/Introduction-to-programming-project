@@ -36,7 +36,6 @@
   <li> PYQT5-TOOLS</li>
 </ol>
 
-<p>Make sure you have Python and pip installed on your system before proceeding with the requirements.</p>
 
 <h2>📋 Usage</h2>
 
