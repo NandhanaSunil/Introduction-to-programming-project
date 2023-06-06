@@ -53,7 +53,7 @@
 <p>The future goals for this project include:</p>
 
 <ul>
-  <li> Enhancing object detection accuracy by incorporating deep learning-based models.</li>
+  <li> Enhancing object detection accuracy by incorporating programs to calibrate camera so that angle of capturing doesn't affect measurement.</li>
   <li> Introducing additional measurement metrics such as volume and area.</li>
 </ul>
 
