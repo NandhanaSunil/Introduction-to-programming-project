@@ -32,7 +32,6 @@
 <ol>
   <li> PYQT5</li>
   <li> OPEN-CV</li>
-  <li> HOMOBGDTECTOR</li>
   <li> PYQT5-TOOLS</li>
 </ol>
 
