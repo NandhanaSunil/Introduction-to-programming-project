@@ -42,7 +42,7 @@
 
 <ol>
   <li> Import the necessary modules and functions from the project.</li>
-  <li> Load the image in which you want to measure the object's side by browsing files or live capturing.</li>
+  <li> Load the image of which you want to measure the object's side by browsing files or live capturing.</li>
   <li> In the live-capturing mode press 'esc' key when you want to close the program.</li>
 </ol>
 
