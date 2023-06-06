@@ -14,7 +14,7 @@
 
 <h2>📃 Project Description</h2>
 <p>The "Measure Craft" project aims to provide a solution for measuring the height and width of an object using the OpenCV library. This project utilizes computer vision techniques to detect objects in an image, calculate their dimensions, and convert the measurements from pixels to centimeters.</p>
-<p>The project offers the following features:</p>
+<p>The project has the following features:</p>
 
 <ul>
   <li> Object Detection: Utilizes OpenCV's object detection capabilities to identify objects in an image.</li>
