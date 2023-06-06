@@ -77,8 +77,8 @@ class Ui_MainWindow(object):
         if self.fl:
 
             # load Aruco detector
-            para = aruco.DetectorParameters()
-            dict_aruco = aruco.getPredefinedDictionary(aruco.DICT_5X5_50)
+            para = cv2.aruco.DetectorParameters()
+            dict_aruco = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_50)
 
             # Read the selected image
             img = cv2.imread(self.fl)
