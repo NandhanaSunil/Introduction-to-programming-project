@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import cv2
+from cv2 import aruco
 import numpy as np
 from PyQt5.QtWidgets import QFileDialog
 from detect import HomoBgDtector
