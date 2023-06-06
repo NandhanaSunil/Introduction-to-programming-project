@@ -53,8 +53,7 @@
 <p>The future goals for this project include:</p>
 
 <ul>
-  <li> Enhancing object detection accuracy by incorporating programs to calibrate camera so that angle of capturing doesn't affect measurement.</li>
-  <li> Introducing additional measurement metrics such as volume and area.</li>
+  <li> Enhancing object detection accuracy by incorporating programs to calibrate camera so that angle of capturing doesn't affect measurement of dimensions.</li>
 </ul>
 
 <h2>⚠️ Limitations</h2>
@@ -63,8 +62,7 @@
 
 <ul>
   <li> Accuracy: The measurement accuracy heavily depends on the object detection and approximation methods used. Complex shapes and occlusions can affect the accuracy.</li>
-  <li> Lighting Conditions: The project assumes consistent lighting conditions for accurate detection and measurement.</li>
-  <li> Calibration: The accuracy of the pixel-to-centimeter conversion relies on the correct identification and size estimation of the Aruco marker.</li>
+  <li> The image of object should be captured exactly at 90 degrees so that image is not distorted.</li>
 </ul>
 
 <h2>👥 Contributors</h2>
