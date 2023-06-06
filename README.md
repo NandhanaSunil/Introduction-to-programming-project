@@ -27,7 +27,7 @@
 
 <h2>💻 Requirements</h2>
 
-<p>To run and set up the project easily, import these libraries:</p>
+<p>To run and set up the project easily, these libraries are required:</p>
 <h3> Modules: </h3>
 <ol>
   <li> PYQT5</li>
@@ -38,7 +38,7 @@
 
 <h2>📋 Usage</h2>
 
-<p>To use this project, follow these steps:</p>
+<p>To use this project, these steps are to be followed:</p>
 
 <ol>
   <li> Import the necessary modules and functions from the project.</li>
