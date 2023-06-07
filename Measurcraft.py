@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         self.label.setAutoFillBackground(False)
         self.label.setText("")
         script_path = os.path.dirname(os.path.abspath(__file__))
-        image_path = os.path.join(script_path, "photo-1617118602031-1edde7582212.jpg")
+        image_path = os.path.join(script_path, "back_interface.jpg")
         self.label.setPixmap(QtGui.QPixmap(image_path))
         self.label.setObjectName("label")
         # Add pushbutton for Live Capture
