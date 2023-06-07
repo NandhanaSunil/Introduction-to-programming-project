@@ -44,7 +44,7 @@
   <li> Import the necessary modules and functions from the project.</li>
   <li> Download the file "back_interface.jpg" in the same directory of the code.(This is the background image for interface). </li> 
   <li> Load the image of which you want to measure the object's side by browsing files or live capturing.</li>
-  <li> "ArucoMarker5X5_50 should be present in the image of object whose dimension has to be measured </li>
+  <li> "ArucoMarker5X5_50" should be present in the image of object whose dimension has to be measured(attached as 5x5_1000-10.svg in this repository). </li>
   <li> In the live-capturing mode press 'esc' key when you want to close the program.</li>
 </ol>
 
