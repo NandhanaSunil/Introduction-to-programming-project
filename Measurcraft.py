@@ -4,6 +4,7 @@ from cv2 import aruco
 import numpy as np
 from PyQt5.QtWidgets import QFileDialog
 from detect import HomoBgDtector
+import os
 
 
 detector = HomoBgDtector()
@@ -20,9 +21,9 @@ class Ui_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(0, 0, 801, 601))
         self.label.setAutoFillBackground(False)
         self.label.setText("")
-        self.label.setPixmap(
-            QtGui.QPixmap("photo-1617118602031-1edde7582212.jpg")
-            )
+        script_path = os.path.dirname(os.path.abspath(__file__))
+        image_path = os.path.join(script_path, "photo-1617118602031-1edde7582212.jpg")
+        self.label.setPixmap(QtGui.QPixmap(image_path))
         self.label.setObjectName("label")
         # Add pushbutton for Live Capture
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
