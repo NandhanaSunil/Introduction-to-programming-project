@@ -72,7 +72,7 @@
 <p>The following contributors have made significant contributions to this project:</p>
 
 <ul>
-  <li>👤 Sangam (@s-angam)</li>
+  <li>👤 Sangam (@S-angam)</li>
   <li>👤 Nandhana Sunil (@NandhanaSunil)</li>
   <li>👤 Rhoda Grace (@RhodaGrace)</li>
 </ul>
