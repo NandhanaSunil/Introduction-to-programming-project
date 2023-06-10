@@ -119,8 +119,8 @@ class Ui_MainWindow(object):
                     cv2.putText(img, f"Height:{round(h,1)}cm", (int(x-70),
                                                                 int(y+50)),
                                 cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
-                    cv2.putText(img, f'Area:{round((h*w),2)}cm',(int(x-70),
-                                                                 int(y+110)),
+                    cv2.putText(img, f'Area:{round((h*w),2)}sq.cm',(int(x-70),
+                                                                 int(y+130)),
                                 cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2 )
                     
                     # Mark the centre of the object with a circle
@@ -207,8 +207,8 @@ class Ui_MainWindow(object):
                     cv2.putText(img, f"Height:{round(h,1)}", (int(x-70),
                                                               int(y+50)),
                                 cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2)
-                    cv2.putText(img, f'Area:{round((h*w),2)}cm',(int(x-70),
-                                                                 int(y+110)),
+                    cv2.putText(img, f'Area:{round((h*w),2)}sq.cm',(int(x-70),
+                                                                 int(y+130)),
                                 cv2.FONT_HERSHEY_SIMPLEX, 1, (100, 200, 0), 2 )
                     # To mark the Object's Center
                     cv2.circle(img, (int(x), int(y)), 5, (0, 0, 255), -1)
